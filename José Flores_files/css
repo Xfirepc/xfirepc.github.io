@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Baloo Chettan';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Baloo Chettan Regular'), local('BalooChettan-Regular'), url(https://fonts.gstatic.com/s/baloochettan/v3/0QImMXRN8o2gTC2YTr4665DA47v2-A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Thambi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Baloo Thambi Regular'), local('BalooThambi-Regular'), url(https://fonts.gstatic.com/s/baloothambi/v3/va9B4kXJzNhTFoA7CYcS8sHeRhf_.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Days One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Days One'), local('DaysOne-Regular'), url(https://fonts.gstatic.com/s/daysone/v7/mem9YaCnxnKRiYZOCIYScr0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Orbitron Regular'), local('Orbitron-Regular'), url(https://fonts.gstatic.com/s/orbitron/v9/yMJRMIlzdpvBhQQL_Qq7dyg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Orbitron Bold'), local('Orbitron-Bold'), url(https://fonts.gstatic.com/s/orbitron/v9/yMJWMIlzdpvBhQQL_QIAUjh2qtU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Orbitron Black'), local('Orbitron-Black'), url(https://fonts.gstatic.com/s/orbitron/v9/yMJWMIlzdpvBhQQL_QI4UDh2qtU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Play Regular'), local('Play-Regular'), url(https://fonts.gstatic.com/s/play/v9/6aez4K2oVqwIvtU2Gg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Play Bold'), local('Play-Bold'), url(https://fonts.gstatic.com/s/play/v9/6ae84K2oVqwItm4TCpAy3w.ttf) format('truetype');
+}

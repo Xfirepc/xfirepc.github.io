@@ -1,0 +1,100 @@
+/*--------------------------
+
+		STYLE
+
+-------------------------*/
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+  font-family: 'Play', sans-serif;
+  font-size: 17px;
+  font-style: bold;
+}
+.container{
+	max-width: 1000px;
+	width: 100%;
+}
+.titulo{
+	font-family: 'Orbitron', sans-serif;
+	text-align: left;
+	font-size: 55px;
+	margin-bottom: -5px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+h1{
+  color: #63B8FF;
+  text-align: center;
+}
+body {background:#FEFEFE;}
+.perfil{
+	border-radius: 100px;
+}
+
+/*--------------------------
+
+		FUNCIONES
+
+-------------------------*/
+strong{
+	color: #09F;
+}
+.links a{
+
+	color: #CEF6F5;
+}
+.links a :hover{
+
+	color: #fff;
+}
+.f-left{
+	float: left;
+}
+.add-padding{
+	padding: 10px;
+}
+.rmv-padding{
+	padding: -10px;
+}
+.add-margin{
+	margin: 10px;
+}
+.rmv-margin{
+	margin: -10px;
+}
+.bg-gray{
+	background: #585858;
+	color: #fff;
+}
+.bg-blue{
+	background: #09F;
+	color: #fff;
+}
+.border-r{
+	border-radius: 5px;
+}
+.top{
+	 margin-top: 20px;
+}
+.bottom{
+	margin-bottom: 70px;
+}
+/*--------------------------
+
+		MENU
+
+-------------------------*/
+
+
+/*--------------------------
+
+
+-------------------------*/

@@ -1,0 +1,63 @@
+function Circle(id,know){
+
+	var ctx = document.getElementById(id).getContext('2d');
+	var start = 4.72;
+	var cw = ctx.canvas.width;
+	var ch = ctx.canvas.height; 
+	var al = 0;
+	var diff;
+
+
+	function progressSim(){
+		diff = ((al / 100) * Math.PI*2*10).toFixed(2);
+		ctx.clearRect(0, 0, cw, ch);
+		ctx.lineWidth = 25;
+		ctx.fillStyle = '#1c1c1c';
+		ctx.strokeStyle = "#09F";
+		ctx.textAlign = 'center';
+		ctx.font = "bold 22px Play";
+		ctx.fillText(al+'%', cw-75, cw-70);
+		ctx.beginPath();
+		ctx.arc(73, 73, 50, start, diff/10+start);
+		ctx.stroke();
+		if(al >= know){
+			clearTimeout(sim);
+		    // Add scripting here that will run when progress completes
+		}
+		al++;
+	}
+	var sim = setInterval(progressSim, 20);
+
+}
+Circle('circle_bar1',75);
+Circle('circle_bar2',65);
+Circle('circle_bar3',50);
+Circle('circle_bar4',60);
+Circle('circle_bar5',80);
+Circle('circle_bar6',70);
+
+
+$(document).ready(main);
+ 
+var contador = 1;
+ 
+function main () {
+	$('.menu_bar').click(function(){
+		if (contador == 1) {
+			$('nav').animate({
+				left: '0'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('nav').animate({
+				left: '-100%'
+			});
+		}
+	});
+ 
+	// Mostramos y ocultamos submenus
+	$('.submenu').click(function(){
+		$(this).children('.children').slideToggle();
+	});
+}
