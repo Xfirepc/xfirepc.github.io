@@ -1,17 +1,13 @@
 {
-  "name": "xfirepc.github.io",
+  "name": "Xfire",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
     "build:dev": "webpack-dev-server --config ./webpack.dev.config.js",
     "build": "webpack",
     "build:local": "webpack --env.NODE_ENV=local",
     "build:prod": "webpack -p --env.NODE_ENV=production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Xfirepc/xfirepc.github.io.git"
   },
   "author": "Jose Flores",
   "license": "MIT",
@@ -34,9 +30,5 @@
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
-  },
-  "bugs": {
-    "url": "https://github.com/Xfirepc/xfirepc.github.io/issues"
-  },
-  "homepage": "https://github.com/Xfirepc/xfirepc.github.io#readme"
+  }
 }
