@@ -4,7 +4,7 @@ import Portfolio from './portfolio/container/port'
 
 let url = 'https://xfirepc.000webhostapp.com/apixfire/ports'
 
-fetch(url, {mode: 'no-cors'})
+fetch(url)
 .then(function(response) {
   console.log(response); 
 }).catch(function(error) {  
