@@ -1,14 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Portafolio from './portfolio/container/port'
+import Portfolio from './portfolio/container/port'
 
-var data = () => {
-  fetch('https://xfirepc.000webhostapp.com/api/blogCallback').then((response) => {
-    return response.json()
-  })
-}
+let url = 'https://xfirepc.000webhostapp.com/apixfire/ports'
+
+fetch(url, {mode: 'no-cors'})
+.then(function(response) {
+  console.log(response); 
+}).catch(function(error) {  
+  console.log('Request failed', error)  
+});
 
 
-console.log("Si llegan datos")
+console.log('')
 const port = document.getElementById('appPort')
-ReactDOM.render(<Portafolio data = {data}/>, port)
+ReactDOM.render(<Portfolio />, port)
