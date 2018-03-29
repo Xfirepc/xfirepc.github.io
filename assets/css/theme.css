@@ -170,8 +170,14 @@ img {
 .image_perfil img{
 	width: 20%;
 	border-radius: 50%;
-	padding: 0.8em;
+	padding: 0.1em;
 	border: 2px solid white;
+	transition: all 0.3s;	
+}
+
+.image_perfil img:hover{
+	box-shadow: 0px 0px 15px rgb(73, 250, 88);
+	cursor: pointer;
 }
 #top-slidingbar-wrapper {
 	position: absolute;
@@ -197,6 +203,9 @@ img {
 	font-size: 16px;
 }
 @media (max-width: 991px) {
+	.image_perfil img{
+		width: 40%;
+	}
 	#top-slidingbar {
 		max-height: 440px;
 		overflow-y: auto;
@@ -306,6 +315,7 @@ body.boxed #header.header-fluid .container {
 	margin-top: 0 !important;
 }
 @media (max-width: 768px) {
+
 	/* header no move on small devices */
 	.show-hide-on-scroll { 
 		position: absolute !important;
@@ -380,6 +390,7 @@ body.boxed #header.header-fluid .container {
 
 /* Header sizes */
 @media (min-width: 992px) {
+
 	/* Header */
 	#header.header-md {
 		min-height: 80px;
@@ -480,6 +491,9 @@ body.boxed #header.header-fluid .container {
 	left: 30px;
 }
 @media (max-width: 992px) {
+	.image_perfil img{
+		width: 40%;
+	}
 	#header.header-fluid .logo {
 		left: 20px;
 	}
@@ -630,6 +644,9 @@ body.boxed #header.header-fluid .container {
 	margin-right: -15px;
 }
 @media (min-width : 1200px) {
+	.image_perfil img{
+		width: 20%;
+	}
 	#header.header-fluid .navbar-right {
 		margin-right: 20px;
 	}
@@ -3125,6 +3142,9 @@ img.mfp-img {
 	transition: all 0.6s ease-in-out;
 }
 @media (min-width: 992px) {
+	.image_perfil img{
+		width: 20%;
+	}
 	/* Show team image hover effect on bigger devices only */
 	.team-box:hover.team-box-hover .team-image {
 		-webkit-transform: translateY(-10px);
@@ -3277,6 +3297,7 @@ img.mfp-img {
 	}
 }
 @media (max-width: 768px) {
+	
 	.call-to-action-title {
 		font-size: 22px;
 	}
