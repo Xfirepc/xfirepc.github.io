@@ -10,9 +10,9 @@ function PortfolioContent (props) {
         <div className="isotope-item photography wow fadeInUp">
         	<div className="portfolio-item-wrap">
 									<div className="portfolio-item">
-										<a ref={props.setRef} className="item-link inline-popup-trigger" onClick={props.handleClick} href={`#portfolio-${data.id}`}>
+										<a ref={props.setRef} className={"item-link inline-popup-trigger " + data.id} onClick={props.handleClick} href={`#portfolio-${data.id}`}>
 											<span className="cover bg-transparent-9-main"></span>
-											<img className="item-img" src="assets/img/portfolio/masonry/portfolio-img-4.jpg" alt="image"/>
+											<img className="item-img" src={props.url_image} alt="image"/>
 											<div className="item-info text-white">
 												<h3 className="item-info-title">{data.title}</h3>
 												<p className="item-info-text">{data.catedory}</p>
@@ -23,7 +23,7 @@ function PortfolioContent (props) {
 									<div id={`portfolio-${data.id}`} className="inline-popup mfp-hide">
 										<div className="inline-popup-inner">
 
-											<div className="inline-popup-image bg-image" style={{backgroundImage: 'url(assets/img/portfolio/big/portfolio-img-4.jpg)', backgroundPosition: '50% 50%'}}></div>
+											<div className="inline-popup-image bg-image" style={{backgroundImage: props.url_image, backgroundPosition: '10% 50%'}}></div>
 
 											<div className="row margin-top-40">
 												<div className="col-md-8 margin-bottom-20">
@@ -35,7 +35,7 @@ function PortfolioContent (props) {
 														<li>Client: <strong><a>{data.client}</a></strong></li>
 														<li>Date: <strong><a>{data.date}</a></strong></li>
 														<li>Category <strong><a>{data.category}</a></strong></li>
-														<li>Copyright ©2016, All Rights Reserved</li>
+														<li>Copyright ©2018, All Rights Reserved</li>
 													</ul>
 													<a href={data.link} target="_blank" className="btn btn-primary btn-rounded btn-lg margin-top-20">View Project</a>
 												</div>

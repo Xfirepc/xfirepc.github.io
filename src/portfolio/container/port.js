@@ -17,7 +17,6 @@ class Portfolio extends Component{
   }
 
   launchModal = (ev) =>{
-    
     $('.inline-popup-trigger').magnificPopup({
       type: 'inline',
       modal: false,
@@ -31,19 +30,15 @@ class Portfolio extends Component{
       removalDelay: 300,
       mainClass: 'mfp-fade-zoom',
       gallery: {
-          enabled: true, // enable or disable gallery (false/true)
-          arrowMarkup: '<button title="%title%" type="button" class="mfp-custom-arrow mfp-custom-arrow-%dir%"></button>', // markup of an arrow button
-          tPrev: 'Previous (Left arrow key)', // title for left button
-          tNext: 'Next (Right arrow key)' // title for right button
+        enabled: true, // enable or disable gallery (false/true)
+        arrowMarkup: '<button title="%title%" type="button" class="mfp-custom-arrow mfp-custom-arrow-%dir%"></button>', // markup of an arrow button
+        tPrev: 'Previous (Left arrow key)', // title for left button
+        tNext: 'Next (Right arrow key)' // title for right button
       }
     });
-    
-  
-
   }
   setRef = (element) => {
     this.tigger = element
-    console.log(this.tigger)
   }
   
   render(){

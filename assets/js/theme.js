@@ -647,26 +647,7 @@ $(document).ready(function() {
     }
   });
 
-  // Inline popup (type inline)
-  $('.inline-popup-trigger').magnificPopup({
-    type: 'inline',
-    modal: false,
-    alignTop: true,
-    fixedContentPos: true,
-    fixedBgPos: false,
-    overflowY: 'auto',
-    closeBtnInside: true,
-    preloader: false,
-    midClick: true,
-    removalDelay: 300,
-    mainClass: 'mfp-fade-zoom',
-    gallery: {
-        enabled: true, // enable or disable gallery (false/true)
-        arrowMarkup: '<button title="%title%" type="button" class="mfp-custom-arrow mfp-custom-arrow-%dir%"></button>', // markup of an arrow button
-        tPrev: 'Previous (Left arrow key)', // title for left button
-        tNext: 'Next (Right arrow key)' // title for right button
-    }
-  });
+
 
   $(document).on('click', '.inline-popup-close', function (e) {
     e.preventDefault();
