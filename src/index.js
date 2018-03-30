@@ -13,5 +13,5 @@ const url = {
   blog: 'http://xfirepc.000webhostapp.com/apixfire/blogs'
 }
 
-//ReactDOM.render(<Portfolio url = {url}/>, port)
+ReactDOM.render(<Portfolio url = {url}/>, port)
 ReactDOM.render(<BlogContainer url = {url}/>, blog)
