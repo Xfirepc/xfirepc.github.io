@@ -4,7 +4,7 @@ function PortfolioContent (props) {
 
   if(props.item != ''){
     return props.item.map((data)=> {
-      console.log(data)
+      //console.log(data)
       return (<div key={data.id}>
         <div className="isotope-item wow fadeInUp">
         	<div className="portfolio-item-wrap">

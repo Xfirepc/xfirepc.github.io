@@ -4,39 +4,51 @@ import React from 'react'
 function BlogContent ( props ) {
 
   if(props.item != ''){
+    let x = 0;
+    let push = ''
+    let pull = ''
+
+    
     return (
       props.item.map(( data ) => {
+        if (x % 2 == 0) {
+          pull = 'col-md-pull-6'
+          push = 'col-md-push-6'
+        } else {
+          pull = ''
+          push = ''
+        }
+        x++
         return (
           //Codigo html
-          <div className="blog-list-item row wow fadeInUp">
-
-            <div className="col col-md-6 no-padding">
-              <a href="#" className="bco blog-list-image bg-image" 
-              style={{backgroundImage: 'url(assets/img/blog/blog-1.jpg)', backgroundPosition: '50% 50%'}}></a>
+          <div className="blog-list-item row wow fadeInUp" key={data.id}>
+            <div className={'col col-md-6 no-padding ' + push}>
+            <a href="#" className="bco blog-list-image bg-image" 
+              style={{backgroundImage: `url(${data.url_image})`, backgroundPosition: '50% 50%'}}></a>
             </div>
-
-            <div className="col col-md-6 no-padding">
+            <div className={'col col-md-6 no-padding ' + pull}>
               <div className="bco blog-list-info">
-                <h2 className="blog-list-title"><a href="#" title="Aenean Odio Metus">Aenean Odio Metus</a></h2>
+                <h2 className="blog-list-title"><a href="#" title="Aenean Odio Metus">{ data.title }</a></h2>
                 <div className="blog-list-meta">
-                  <a href="#" className="article-time">29 jan 2016</a> - in
-                  <a href="#" className="article-category">#web design</a>
+                  <a href="#" className="article-time">{ data.date }</a> - in &nbsp;
+                  <a href="#" className="article-category">{ data.mentions }</a>
                 </div>
                 <p className="blog-list-desc">
-                  Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                  laboris nisi ut aliquip ex ea commodo consequat...
+                  { data.description }
                 </p>
               </div>
             </div>
 
           </div>
           //Codigo html
+
         )
-      })
+
+      }) //mapping data
     )
-  }else{
-    return null   
   }
+  else
+    return null   
   
 }
 
