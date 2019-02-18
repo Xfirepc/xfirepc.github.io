@@ -1,11 +1,7 @@
-
+*{
+  color: white;
+}
 body {
-background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#131c1a+0,044444+52,000000+100 */
-background: #131c1a; /* Old browsers */
-
-background: linear-gradient(to bottom, #131c1a 0%,#044444 60%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-background-repeat: no-repeat;
-  background-attachment: fixed;
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
@@ -91,9 +87,9 @@ background-repeat: no-repeat;
 }
 
 .key.active.success {
-  background-color: #2ecc71;
+  background-color: #e0e0e0;
   color: white;
-  border-color: #2ecc71;
+  border-color: #e0e0e0;
 }
 
 .key.active.fail {
