@@ -7,30 +7,17 @@ async function getUrlApi ( urlRe ){
   let item = ''
 
   const data =  await fetch(url, {  
-    method: 'POST',
+    method: 'GET',
     headers: {
-      'Accept': 'application/json',
       'Authorization': token,
-      'Content-Type': 'application/json',
-      'Origin': '',
-      'Host': 'api.producthunt.com'
-    },
+    }
   })
-    .then(response => {
-      console.log(response)
-      response.text()})
-    .then(contents => {
-        item = JSON.stringify(eval('(' + contents + ')'))
-    })
-    .catch((e) => console.log("Can’t access " + url + " response. Blocked by browser? " + e))
+   .then( response => response.json() )
+   .then( data =>  data )
+   .catch((e) => console.log("Can’t access " + url + " response. Blocked by browser? " + e))
 
-    let inf = JSON.parse( item )
-
-    Object.keys( inf ).map(( data ) => {
-      arr.push( inf[data] )
-    })
-    console.log(data)
-    return arr
+   console.log(data)
+    return data
 }
 
 export default getUrlApi
