@@ -12,7 +12,7 @@ function PortfolioContent (props) {
 									<div className="portfolio-item">
 										<a ref={props.setRef} className={"item-link inline-popup-trigger " + data.id} onClick={props.handleClick} href={`#portfolio-${data.id}`}>
 											<span className="cover bg-transparent-9-main"></span>
-											<img className="item-img" alt="image" src={data.url_image} width="100%" height="320px"/>
+											<img className="item-img" alt="image" src={data.image} width="100%" height="320px"/>
 											<div className="item-info text-white">
 												<h3 className="item-info-title">{data.name}</h3>
 												<p className="item-info-text">{data.category}</p>
