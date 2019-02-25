@@ -36,7 +36,7 @@ function PortfolioContent (props) {
 														<li>Category <strong><a>{data.category}</a></strong></li>
 														<li>Copyright ©2018, All Rights Reserved</li>
 													</ul>
-													<a href={data.link} target="_blank" className="btn btn-primary btn-rounded btn-lg margin-top-20">View Project</a>
+													<a href={data.url} target="_blank" className="btn btn-primary btn-rounded btn-lg margin-top-20">View Project</a>
 												</div>
 											</div>
 											<div className="inline-popup-image bg-image" style={{backgroundImage: `url(${data.url_image})`, backgroundSize: '50%'}}></div>
