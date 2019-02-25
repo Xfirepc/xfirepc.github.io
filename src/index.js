@@ -9,9 +9,9 @@ const blog = document.getElementById('appBlog')
 
 
 const url = {
-  portfolio: 'http://xfirepc.000webhostapp.com/apixfire/ports',
+  portfolio: 'https://api-xfirepc.herokuapp.com/api/portfolios',
   blog: 'http://xfirepc.000webhostapp.com/apixfire/blogs'
 }
 
 ReactDOM.render(<Portfolio url = {url}/>, port)
-ReactDOM.render(<BlogContainer url = {url}/>, blog)
+// ReactDOM.render(<BlogContainer url = {url}/>, blog)
