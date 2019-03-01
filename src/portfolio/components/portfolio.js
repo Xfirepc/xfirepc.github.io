@@ -39,7 +39,7 @@ function PortfolioContent (props) {
 													<a href={data.url} target="_blank" className="btn btn-primary btn-rounded btn-lg margin-top-20">View Project</a>
 												</div>
 											</div>
-											<div className="inline-popup-image bg-image" style={{backgroundImage: `url(${data.url_image})`, backgroundSize: '50%'}}></div>
+											<div className="inline-popup-image bg-image" style={{backgroundImage: `url(${data.image})`, backgroundSize: '50%'}}></div>
 
 										</div>
 
