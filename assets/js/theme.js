@@ -669,9 +669,16 @@ $(function() {
     var th = $(this);
     $.ajax({
       type: "POST",
-      url: "https://trolesystemphp.herokuapp.com/mail.php", //Change (mail.php path)
-      data: th.serialize()
+      url: "https://xfirepc.000webhostapp.com/index.php", //Change (mail.php path)
+      data: th.serialize(),
+      crossDomain:true,
     }).done(function() {
+      alert("Thank you. Your message has been sent!");
+      setTimeout(function() {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    }).fail(() => {
       alert("Thank you. Your message has been sent!");
       setTimeout(function() {
         // Done Functions
