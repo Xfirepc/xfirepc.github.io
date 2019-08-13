@@ -1409,8 +1409,8 @@
 	}
 
 	body {
-		background-color: #000;
-		background-image: url("../../images/bg.jpg");
+		background-color: rgb(31, 31, 31);
+		/* background-image: url("../../images/bg.jpg"); */
 		background-size: cover;
 		background-position: top center;
 	}
@@ -2617,8 +2617,9 @@
 /* Footer */
 
 	#footer {
-		text-align: center;
-		padding: 4em 0 4em 0;
+		text-align: right;
+		padding:  0.1em 0 0.1em 0;
+		opacity: 0.5;
 	}
 
 		#footer:before {
