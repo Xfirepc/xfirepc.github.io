@@ -165,16 +165,30 @@ img {
  *  Top slidingbar
 /* ------------------------------------------------------------- */
 .image_perfil{
-	border-radius: 50%;
-}
-.image_perfil img{
-	width: 20%;
-	border-radius: 50%;
-	border: 0px solid white;
+	margin: 3em auto;
+	display: block;
+	width: 200px; 
+	height: 200px; 
+	border: 1px solid #555; 
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	overflow: hidden;
+	background: #939393;
 	transition: all 0.3s;	
 }
+.image_perfil img{
+	width: 100%;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg) scale(1.2);
+}
 
-.image_perfil img:hover{
+.image_perfil:hover{
 	box-shadow: 0px 0px 15px #f7465b;
 	cursor: pointer;
 }
@@ -202,9 +216,6 @@ img {
 	font-size: 16px;
 }
 @media (max-width: 991px) {
-	.image_perfil img{
-		width: 40%;
-	}
 	#top-slidingbar {
 		max-height: 440px;
 		overflow-y: auto;
@@ -490,9 +501,7 @@ body.boxed #header.header-fluid .container {
 	left: 30px;
 }
 @media (max-width: 992px) {
-	.image_perfil img{
-		width: 40%;
-	}
+
 	#header.header-fluid .logo {
 		left: 20px;
 	}
@@ -643,9 +652,6 @@ body.boxed #header.header-fluid .container {
 	margin-right: -15px;
 }
 @media (min-width : 1200px) {
-	.image_perfil img{
-		width: 20%;
-	}
 	#header.header-fluid .navbar-right {
 		margin-right: 20px;
 	}
@@ -3141,9 +3147,6 @@ img.mfp-img {
 	transition: all 0.6s ease-in-out;
 }
 @media (min-width: 992px) {
-	.image_perfil img{
-		width: 20%;
-	}
 	/* Show team image hover effect on bigger devices only */
 	.team-box:hover.team-box-hover .team-image {
 		-webkit-transform: translateY(-10px);
