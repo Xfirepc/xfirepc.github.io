@@ -5,16 +5,16 @@ function PortfolioContent (props) {
   if(props.item != ''){
     return props.item.map((data)=> {
       //console.log(data)
-      return (<div key={data.id}>
+      return (<div key={data._id}>
         <div className="isotope-item wow fadeInUp">
         	<div className="portfolio-item-wrap">
 					
 									<div className="portfolio-item">
-										<a className={"item-link inline-popup-trigger " + data.id} onClick={props.handleClick} href={`#portfolio-${data.id}`}>
+										<a className={"item-link inline-popup-trigger " + data._id} onClick={props.handleClick} href={`#portfolio-${data._id}`}>
 											<span className="cover bg-transparent-9-main"></span>
 											<img className="item-img" alt="image" src={data.image} width="100%" height="320px"/>
 											<div className="item-info text-white">
-												<h3 className="item-info-title">{data.name}</h3>
+												<h3 className="item-info-title">{data.title}</h3>
 												<p className="item-info-text"><strong>{data.category}</strong></p>
 												<p className="item-info-text"> Double tap! </p>
 												
@@ -22,7 +22,7 @@ function PortfolioContent (props) {
 										</a>
 									</div>
 
-									<div id={`portfolio-${data.id}`} className="inline-popup mfp-hide">
+									<div id={`portfolio-${data._id}`} className="inline-popup mfp-hide">
 										<div className="inline-popup-inner">
 
 
@@ -38,7 +38,7 @@ function PortfolioContent (props) {
 														<li>Category <strong><a>{data.category}</a></strong></li>
 														<li>Copyright ©2018, All Rights Reserved</li>
 													</ul>
-													<a href={data.url} target="_blank" className="btn btn-primary btn-rounded btn-lg margin-top-20">View Project</a>
+													<a href={data.link} target="_blank" className="btn btn-primary btn-rounded btn-lg margin-top-20">View Project</a>
 												</div>
 											</div>
 											<div className="inline-popup-image bg-image" style={{backgroundImage: `url(${data.image})`, backgroundSize: '50%'}}></div>

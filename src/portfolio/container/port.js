@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import getUrlApi from '../../libs/geturl'
 import PortfolioContent from '../components/portfolio'
-
+import { request } from 'graphql-request'
 class Portfolio extends Component{
 
   state = {
@@ -10,8 +10,25 @@ class Portfolio extends Component{
   
   componentWillMount =  async() =>{
 
+    const endpoint = 'https://api-graphql-xfire-personal.vinygfx.now.sh/api'
+    const query = /* GraphQL */ `
+      {
+        getItems{
+          _id
+          title
+          description
+          date
+          client
+          category
+          link
+          image
+        }
+      }
+    `
+    const data = await request(endpoint, query)
+    console.log(data.getItems)
     this.setState({
-      portf: await getUrlApi(this.props.url.portfolio)
+      portf: data.getItems
     })
     
   }

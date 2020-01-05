@@ -8,7 +8,7 @@ module.exports = (env) => {
     new ExtractTextPlugin("css/[name].css")
   ]
 
-  if (env.NODE_ENV === 'production') {
+  if (true) {
     plugins.push(
       new CleanWebpackPlugin(['dist'], {root: __dirname})
     )
