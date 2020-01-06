@@ -10,7 +10,9 @@ function PortfolioContent (props) {
         	<div className="portfolio-item-wrap">
 					
 									<div className="portfolio-item">
-										<a className={"item-link inline-popup-trigger " + data._id} onClick={props.handleClick} href={`#portfolio-${data._id}`}>
+										<a className={"item-link inline-popup-trigger " + data._id} onClick={ () => {
+											props.handleClick(data._id)
+										}} href={`#portfolio-${data._id}`}>
 											<span className="cover bg-transparent-9-main"></span>
 											<img className="item-img" alt="image" src={data.image} width="100%" height="320px"/>
 											<div className="item-info text-white">

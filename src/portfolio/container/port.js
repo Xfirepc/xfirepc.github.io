@@ -30,11 +30,11 @@ class Portfolio extends Component{
     this.setState({
       portf: data.getItems
     })
-    
   }
 
-  launchModal = (ev) =>{
-    $('.inline-popup-trigger').magnificPopup({
+  launchModal = (data) =>{
+
+    $('.'+data).magnificPopup({
       type: 'inline',
       modal: false,
       alignTop: true,
@@ -42,17 +42,12 @@ class Portfolio extends Component{
       fixedBgPos: false,
       overflowY: 'auto',
       closeBtnInside: true,
-      preloader: false,
+      preloader: true,
       midClick: true,
       removalDelay: 300,
       mainClass: 'mfp-fade-zoom',
-      gallery: {
-        enabled: true, // enable or disable gallery (false/true)
-        arrowMarkup: '<button title="%title%" type="button" class="mfp-custom-arrow mfp-custom-arrow-%dir%"></button>', // markup of an arrow button
-        tPrev: 'Previous (Left arrow key)', // title for left button
-        tNext: 'Next (Right arrow key)' // title for right button
-      }
     });
+
   }
   setRef = (element) => {
     this.tigger = element
