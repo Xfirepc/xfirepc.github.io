@@ -30,6 +30,22 @@ class Portfolio extends Component{
     this.setState({
       portf: data.getItems
     })
+    $(document).ready(function(){
+      $('.inline-popup-trigger').magnificPopup({
+        type: 'inline',
+        modal: false,
+        alignTop: true,
+        fixedContentPos: true,
+        fixedBgPos: false,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: true,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'mfp-fade-zoom',
+      });
+  
+    })
   }
 
   launchModal = (data) =>{

@@ -6,9 +6,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js'
   },
-  devServer: {
-    port: 9000,
-  },
   devtool: 'eval-source-map',
   module: {
     rules: [
