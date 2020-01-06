@@ -18,7 +18,7 @@ function PortfolioContent (props) {
 											<div className="item-info text-white">
 												<h3 className="item-info-title">{data.title}</h3>
 												<p className="item-info-text"><strong>{data.category}</strong></p>
-												<p className="item-info-text"> Double tap! </p>
+												<p className="item-info-text"> Tap to show! </p>
 												
 											</div>
 										</a>
