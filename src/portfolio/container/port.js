@@ -10,7 +10,7 @@ class Portfolio extends Component{
   
   componentWillMount =  async() =>{
 
-    const endpoint = 'https://api-graphql-xfire-personal.vinygfx.now.sh/api'
+    const endpoint = 'https://api-graphql-xfire-personal.vercel.app/api'
     const query = /* GraphQL */ `
       {
         getItems{
