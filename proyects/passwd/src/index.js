@@ -3,9 +3,9 @@ const form = document.querySelector("#form");
 const buttonCopy = document.querySelector("#button-copy");
 const inputLength = document.querySelector("#input-length");
 const passwordLengthParagraph = document.querySelector("#password-length");
+const successMessage = document.getElementById("msg")
 
 const API = "https://goquotes-api.herokuapp.com/api/v1/random?count=5";
-
 const letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",];
 const symbols = ["'", ":", "!", "@", "#", "$", "^", ")", "&", "*", "%", "-"];
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
@@ -70,7 +70,10 @@ function copyToClipboard(target) {
     alert("Tienes que generar una contraseña");
   } else {
     window.navigator.clipboard.writeText(value);
-    alert("Copiaste la contraseña");
+    successMessage.style.display = 'block';
+    setTimeout(() => {
+      successMessage.style.display = 'none';
+    }, 2000)
   }
 }
 

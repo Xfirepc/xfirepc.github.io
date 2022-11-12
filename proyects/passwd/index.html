@@ -12,6 +12,7 @@
 
 <body>
   <h1>Generador de contraseñas</h1>
+  <span id="msg">Contraseña copiada.</span>
   <form class="form" id="form">
     <div class="input-container">
       <input type="text" disabled id="password" placeholder="Aquí aparecerá tu contraseña">
@@ -20,8 +21,8 @@
       </button>
     </div>
     <div class="">
-      <input type="range" name="length" id="input-length" min="10" max="100">
-      <p>Define el total de caracteres de tu contraseña: <span id="password-length">50</span></p><br>
+      <input type="range" name="length" id="input-length" min="10" max="100" value="25">
+      <p>Define el total de caracteres de tu contraseña: <span id="password-length">25</span></p><br>
     </div>
 
     <div id="inputPreview">
