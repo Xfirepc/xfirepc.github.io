@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: xfirepc.github.io
-Token: b607768938e9dea6f7ec67a8335e9ecc3ae02204e3906e523d41dffba6897783
